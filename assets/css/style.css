@@ -1,0 +1,25 @@
+
+
+.titlebox {
+    border: 1px black solid;
+    height: 100px; 
+    text-align: center;
+} 
+
+.timerbox {
+    border: 1px black solid;
+    height:  100px;
+    text-align: center;
+}
+
+.questioncontentbox {
+    border: 1px black solid;
+    height:  300px;
+    text-align: center;  
+}
+
+.questionbox {
+    border: 1px black solid;
+}
+
+

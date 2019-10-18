@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  
+
+
+    <div class="container">
+
+        <!-------This is the start trivia game button -->
+        <div id = "start-button">
+        <div class = "row">
+            <div class = "col-6">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="showtriviaPage()" >Test your spooky knowledge</button>
+        </div>
+            </div>
+        </div>
+        
+        
+        <!----This is the heading "Trivia Game"-------->
+        
+        <div id = "trivia-page" style = "display:none;">
+        
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6 titlebox">
+                <h1>Trivia Game</h1>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+
+        <!---This is the Timer Section --------->
+
+
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-2 timerbox " id = "show-number">
+                
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+        <!-----This is row that contains the questions and answer options -------->
+
+        <div class="row">
+            <div class="col-5 questioncontentbox">
+
+                <!----This row contains the question------->
+
+                <div class="row">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8 questionbox">
+                        this is the actual question</p>
+
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                </div>
+                <!-------This row contains the first two answer options ------->
+
+                <div class="row">
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                  
+                    <div class="col answerbox">
+                            <button id = "rightAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                </div>
+
+                <!-------This row contains the last two answer options -------->
+
+                <div class="row">
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                   
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-5 questioncontentbox">
+
+                <!----This row contains the question------->
+
+                <div class="row">
+                    <div class="col-2">
+
+                    </div>
+                    <div class="col-8 questionbox">
+                            <p>this is the actual question</p>
+
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                </div>
+                <!-------This row contains the first two answer options ------->
+
+                <div class="row">
+                    <div class="col answerbox">
+                            <button id = "rightAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                    
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                </div>
+
+                <!-------This row contains the last two answer options -------->
+
+                <div class="row">
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                 
+                    <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----This is row that contains the questions and answer options -------->
+
+        <div class="row">
+                <div class="col-5 questioncontentbox">
+    
+                    <!----This row contains the question------->
+    
+                    <div class="row">
+                        <div class="col-2">
+    
+                        </div>
+                        <div class="col-8 questionbox">
+                                <p>this is the actual question</p>
+    
+                        </div>
+                        <div class="col-2">
+    
+                        </div>
+                    </div>
+                    <!-------This row contains the first two answer options ------->
+    
+                    <div class="row">
+                        <div class="col answerbox">
+                                <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                      
+                        <div class="col answerbox">
+                                <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    </div>
+    
+                    <!-------This row contains the last two answer options -------->
+    
+                    <div class="row">
+                        <div class="col answerbox">
+                                <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    
+                        <div class="col answerbox">
+                                <button id = "rightAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="col-2">
+    
+                </div>
+                <div class="col-5 questioncontentbox">
+    
+                    <!----This row contains the question------->
+    
+                    <div class="row">
+                        <div class="col-2">
+    
+                        </div>
+                        <div class="col-8 questionbox">
+                                <p>this is the actual question</p>
+    
+                        </div>
+                        <div class="col-2">
+    
+                        </div>
+                    </div>
+                    <!-------This row contains the first two answer options ------->
+    
+                    <div class="row">
+                        <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    
+                        <div class="col answerbox">
+                            <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    </div>
+    
+                    <!-------This row contains the last two answer options -------->
+    
+                    <div class="row">
+                        <div class="col answerbox">
+                            <button id = "rightAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    
+                        <div class="col answerbox">
+                             <button id = "wrongAnswer" type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+
+
+    
+    
+    
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/Javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
