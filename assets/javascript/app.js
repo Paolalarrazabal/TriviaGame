@@ -5,7 +5,6 @@ let number = 180
 let countdown;
 
 
-
 let trivia = {
 right: 0, 
 wrong: 0, 
@@ -27,21 +26,80 @@ choices: {
 ,
 rightAnswers: {
     question1: "Overlook Hotel",
-    question2:"Jason Voorhees",
-    question3:"Tim Curry",
+    question2: "Jason Voorhees",
+    question3: "Tim Curry",
     question4: "The Exorcist",
 }
 }
 
 
 
+$(".question1").on('click', function(){
+    if (this.id === "rightAnswer") {
+        console.log("right answer pressed");
+        $(".question1").prop('disabled', true);
+        trivia.right++;
+        console.log(trivia.right);
+        
+    }
+    else if (this.id === "wrongAnswer") {
+        console.log("wrong answer pressed")
+        $(".question1").prop('disabled', true);
+        trivia.wrong++;
+        console.log(trivia.wrong);
+    }
+
+});
 
 
 
+$(".question2").on('click', function(){
+    if (this.id === "rightAnswer") {
+        console.log("right answer pressed")
+        $(".question2").prop('disabled', true);
+        trivia.right++;
+        console.log(trivia.right);
+    }
+    else if (this.id === "wrongAnswer") {
+        console.log("wrong answer pressed")
+        $(".question2").prop('disabled', true);
+        trivia.wrong++;
+        console.log(trivia.wrong);
+    }
 
+});
 
+$(".question3").on('click', function(){
+    if (this.id === "rightAnswer") {
+        console.log("right answer pressed")
+        $(".question3").prop('disabled', true);
+        trivia.right++;
+        console.log(trivia.right);
+    }
+    else if (this.id === "wrongAnswer") {
+        console.log("wrong answer pressed")
+        $(".question3").prop('disabled', true);
+        trivia.wrong++;
+        console.log(trivia.wrong);
+    }
 
+});
 
+$(".question4").on('click', function(){
+    if (this.id === "rightAnswer") {
+        console.log("right answer pressed")
+        $(".question4").prop('disabled', true);
+        trivia.right++;
+        console.log(trivia.right);
+    }
+    else if (this.id === "wrongAnswer") {
+        console.log("wrong answer pressed")
+        $(".question4").prop('disabled', true);
+        trivia.wrong++;
+        console.log(trivia.wrong);
+    }
+
+});
 
 
 $('#showQuestions').on('click',function(){
