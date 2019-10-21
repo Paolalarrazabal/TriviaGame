@@ -1,13 +1,14 @@
 
 $(document).ready(function() {
 
-let number = 180
+let number = 5
 let countdown;
 
 
 let trivia = {
 right: 0, 
 wrong: 0, 
+
 
 
 questions: {
@@ -114,9 +115,8 @@ function decrement() {
     $('#show-number').html("<p>" + number + "<p>");
 
     if (number === 0) {
-
     stop(); 
-
+    showResults();
     }
 }
 
@@ -124,7 +124,20 @@ function stop () {
     clearInterval(countdown);
 }
 
+function showResults () {
+    document.getElementById('trivia-page').style.display = "none";
+    document.getElementById('results-page').style.display = "block";
+    let answersTotal = trivia.wrong + trivia.right; 
+    unanswered = 4 - answersTotal;
+    
+    $('#correct').text("correct: " + trivia.right);
+    $('#incorrect').text("Incorrect: " + trivia.wrong);
+    $('#unanswered').text("Unanswered: " + unanswered);
 
+    console.log('right answers: '+ trivia.right);
+    console.log('wrong answers: '+ trivia.wrong);
+    console.log('unanswered: ' + unanswered);
+}
 
 
 
