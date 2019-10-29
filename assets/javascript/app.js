@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-let number = 5
+let number = 45;
 let countdown;
 
 
@@ -20,9 +20,9 @@ questions: {
 ,
 choices: {
     question1: ["The Stanley Hotel", "Timberline Lodge", "Ahwahnee Hotel", "Overlook Hotel"],
-    question2: ["Jason Voorhees", "Freddy Krueger", "Micheal Meyers", "Leatherface"],
+    question2: ["Jason Voorhees", "Freddy Krueger", "Freddy Krueger", "Leatherface"],
     question3: ["Alice Cooper","Roddy McDowall", "Malcolm McDowell","Tim Curry"],
-    question4: ["The Omen", "The Exorcist", "The Shining", "The Silence of the Lambs"],
+    question4: ["The Omen", "The Exorcist", "The Shining", "Texas Chain Saw Massacre"],
 }
 ,
 rightAnswers: {

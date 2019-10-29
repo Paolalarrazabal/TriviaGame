@@ -1,25 +1,71 @@
 
 
+
+.button {
+    padding: 10px;
+   
+}
+
+body {
+    font-family: 'Lacquer', sans-serif;
+    background-image: url(/assets/images/spookyforest.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 960px;
+}
+
+.centerbutton {
+    margin-top: 200px;
+}
+
 .titlebox {
-    border: 1px black solid;
-    height: 100px; 
+    color: darkred;
+    height: 150px;
     text-align: center;
+    margin-top: 20px;
 } 
 
 .timerbox {
-    border: 1px black solid;
+    color: darkred;
     height:  100px;
     text-align: center;
+    font-size: xx-large;
 }
 
 .questioncontentbox {
     border: 1px black solid;
+    border-radius: 25px;
     height:  300px;
     text-align: center;  
+    color: black;
+    margin-bottom: 30px;
+    background-image: url(/assets/images/blood.png);
+    background-size: cover;
+    overflow: auto;
 }
 
 .questionbox {
-    border: 1px black solid;
+    
 }
 
+#question1, 
+#question2,
+#question3,
+#question4 {
+    margin: 40px auto 30px auto;
+}
 
+ #results-page {
+    background-color: white;
+    height: auto;
+    border: 1px black solid;
+    border-radius: 25px;
+    margin-top: 100px;
+    padding: 10px;
+}
+.results {
+margin-top: 30px;
+font-size: 20px;
+}
