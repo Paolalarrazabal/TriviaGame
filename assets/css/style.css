@@ -18,6 +18,8 @@ body {
     
 }
 
+
+
 .container{
     margin-bottom: 520px;
 }
@@ -65,22 +67,23 @@ body {
 
  #results-page {
     background-color: white;
-    height: auto;
     border: 1px black solid;
     border-radius: 25px;
-    padding: 10px;
+    padding: 100px;
     width: fit-content;
     margin: 100px auto;
     
     
 }
   .results {
-  margin-top: 15px;
+  
   font-size: 20px;
   float: right;
   }
 
-  
+  .results-items {
+      height: 100px;
+  }
 
 
 .question-container {
