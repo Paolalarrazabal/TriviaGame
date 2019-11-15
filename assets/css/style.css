@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Lacquer', sans-serif;
-    background-image: url(../assets/images/spookyforest.jpg);
+    background-image: url("../assets/images/spookyforest.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
