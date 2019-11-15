@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 
 .button {
@@ -9,12 +11,17 @@
 body {
     font-family: 'Lacquer', sans-serif;
     background-image: url("../images/spookyforest.jpg");
-    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 960px;
+
+    
 }
+
+.container{
+    margin-bottom: 520px;
+}
+
 
 .centerbutton {
     margin-top: 200px;
@@ -25,6 +32,7 @@ body {
     height: 150px;
     text-align: center;
     margin-top: 20px;
+    
 } 
 
 .timerbox {
@@ -37,18 +45,16 @@ body {
 .questioncontentbox {
     border: 1px black solid;
     border-radius: 25px;
-    height:  300px;
+    height:  auto;
     text-align: center;  
-    color: black;
-    margin-bottom: 30px;
-    background-image: url("../images/blood.png");
-    background-size: cover;
+    color: whitesmoke;
+    padding: 5px; 
     overflow: auto;
+    background-color: black;
+    font-size: 120%;
 }
 
-.questionbox {
-    
-}
+
 
 #question1, 
 #question2,
@@ -62,10 +68,25 @@ body {
     height: auto;
     border: 1px black solid;
     border-radius: 25px;
-    margin-top: 100px;
     padding: 10px;
+    width: fit-content;
+    margin: 100px auto;
+    
+    
 }
-.results {
-margin-top: 30px;
-font-size: 20px;
+  .results {
+  margin-top: 15px;
+  font-size: 20px;
+  float: right;
+  }
+
+  
+
+
+.question-container {
+    border: 1px black solid;
+    border-radius: 25px;
+    padding: 20px;
+    background-image: url("../images/blood.png");
+   
 }

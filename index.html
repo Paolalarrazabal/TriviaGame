@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lacquer|Patrick+Hand|Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Patrick+Hand|Special+Elite&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +20,16 @@
     <div class="container">
 
         <!-------This is the start trivia game button -->
-        <div id = "start-button">
+        <div id="start-button">
             <div class="row align-items-center">
-            <div class ="col"></div>
+                <div class="col"></div>
                 <div class="col-sm-5 centerbutton">
-                    
-                    <button type="button" class="btn btn-danger btn-lg btn-block button" id="showQuestions">Test your spooky
+
+                    <button type="button" class="btn btn-danger btn-lg btn-block button" id="showQuestions">Test your
+                        spooky
                         knowledge</button>
                 </div>
-                <div class ="col"></div>
+                <div class="col"></div>
             </div>
         </div>
 
@@ -56,244 +58,222 @@
 
                 </div>
                 <div class="col-2 timerbox " id="show-number">
-                
+
                 </div>
                 <div class="col">
 
                 </div>
             </div>
 
-            <!-----This is row that contains the first question and answer options -------->
-
+            <!-----This is row that contains the first question -------->
+<div class="question-container">
             <div class="row">
-                <div class="col-5 questioncontentbox">
+                <div class="col-12 questioncontentbox">
 
-                    <!----This row contains the question------->
+                    <div class="questionbox">
+                        <p>What is the name of the hotel in the movie The Shining?</p>
 
-                    <div class="row">
-                        <div class="col-2">
-
-                        </div>
-                        <div class="col-8 questionbox">
-                            <p>What is the name of the hotel in the movie The Shining?</p>
-
-                        </div>
-                        <div class="col-2">
-
-                        </div>
-                    </div>
-                    <!-------This row contains the first two answer options ------->
-
-                    <div class="row">
-                        <div class="col" id="question1"> <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question1">The Stanley Hotel</button>
-
-                        </div>
-
-                        <div class="col" id="question1">
-                            <button id="rightAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question1">Overlook Hotel</button>
-                        </div>
-                    </div>
-
-                    <!-------This row contains the last two answer options -------->
-
-                    <div class="row">
-                        <div class="col" id="question1">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question1 ">Timberline Lodge"</button>
-                        </div>
-
-                        <div class="col" id="question1">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question1">Ahwahnee Hotel</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-5 questioncontentbox">
-
-                    <!----This row contains the question------->
-
-                    <div class="row">
-                        <div class="col-2">
-
-                        </div>
-                        <div class="col-8 questionbox">
-                            <p>Who has murdered the most people in a slasher film?</p>
-
-                        </div>
-                        <div class="col-2">
-
-                        </div>
-                    </div>
-                    <!-------This row contains the first two answer options ------->
-
-                    <div class="row">
-                        <div class="col" id="question2">
-                            <button id="rightAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question2">Jason Voorhees</button>
-                        </div>
-
-                        <div class="col" id="question2">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question2">Freddy Krueger</button>
-                        </div>
-                    </div>
-
-                    <!-------This row contains the last two answer options -------->
-
-                    <div class="row">
-                        <div class="col" id="question2">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question2">Freddy Krueger</button>
-                        </div>
-
-                        <div class="col" id="question2">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question2">Leatherface</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-----This is row that contains the questions and answer options -------->
-
-            <div class="row">
-                <div class="col-5 questioncontentbox">
-
-                    <!----This row contains the question------->
-
-                    <div class="row">
-                        <div class="col-2">
-
-                        </div>
-                        <div class="col-8 questionbox">
-                            <p>Which actor played Pennywise in the 1990 miniseries?</p>
-
-                        </div>
-                        <div class="col-2">
-
-                        </div>
-                    </div>
-                    <!-------This row contains the first two answer options ------->
-
-                    <div class="row">
-                        <div class="col" id="question3">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question3">Alice Cooper</button>
-                        </div>
-
-                        <div class="col" id="question3">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question3">Roddy McDowall</button>
-                        </div>
-                    </div>
-
-                    <!-------This row contains the last two answer options -------->
-
-                    <div class="row">
-                        <div class="col" id="question3">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question3">Malcolm McDowell</button>
-
-                        </div>
-
-                        <div class="col" id="question3">
-                            <button id="rightAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question3">Tim Curry</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-5 questioncontentbox">
-
-                    <!----This row contains the question------->
-
-                    <div class="row">
-                        <div class="col-2">
-
-                        </div>
-                        <div class="col-8 questionbox">
-                            <p>Which horror movie was the first to be nominated for an oscar?</p>
-
-                        </div>
-                        <div class="col-2">
-
-                        </div>
-                    </div>
-                    <!-------This row contains the first two answer options ------->
-
-                    <div class="row">
-                        <div class="col" id="question4">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question4">The Omen</button>
-                        </div>
-
-                        <div class="col" id="question4">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question4">The Shining</button>
-                        </div>
-                    </div>
-
-                    <!-------This row contains the last two answer options -------->
-
-                    <div class="row">
-                        <div class="col" id="question4">
-                            <button id="rightAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question4">The Exorcist</button>
-                        </div>
-
-                        <div class="col" id="question4">
-                            <button id="wrongAnswer" type="button"
-                                class="btn btn-outline-dark btn-block question4">Texas Chain Saw Massacre</button>
-                        </div>
                     </div>
                 </div>
             </div>
 
 
 
+            <!-------This row contains the first two answer options ------->
 
-
-
-
-
-
-
-        </div>
-
-
-        <!-------This is the results page -->
-
-
-        <div id="results-page" style="display:none;">
             <div class="row">
-                <div class="col-6">
-                       
-                        <img src="../images/jason.jpg" alt = "Lil Jason" height = "200px">
-                        
+                <div class="col" id="question1"> <button id="wrongAnswer" type="button"
+                        class="btn btn-outline-dark btn-block question1">The Stanley Hotel</button>
+
                 </div>
-                <div class="col-6 results">
-                    
-                    <p id="correct"> </p>
-                    <p id="incorrect"> </p>
-                    <p id="unanswered"> </p>
-                    
-                    
+
+                <div class="col" id="question1">
+                    <button id="rightAnswer" type="button" class="btn btn-outline-dark btn-block question1">Overlook
+                        Hotel</button>
                 </div>
-               
             </div>
+
+            <!-------This row contains the last two answer options -------->
+
+            <div class="row">
+                <div class="col" id="question1">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question1 ">Timberline
+                        Lodge"</button>
+                </div>
+
+                <div class="col" id="question1">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question1">Ahwahnee
+                        Hotel</button>
+                </div>
+            </div>
+
+            <!----This row contains the second question------->
+
+            <div class="row">
+                <div class="col-12 questioncontentbox">
+                    <div class="questionbox">
+                        <p>Who has murdered the most people in a slasher film?</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-------This row contains the first two answer options ------->
+
+            <div class="row">
+                <div class="col" id="question2">
+                    <button id="rightAnswer" type="button" class="btn btn-outline-dark btn-block question2">Jason
+                        Voorhees</button>
+                </div>
+
+                <div class="col" id="question2">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question2">Freddy
+                        Krueger</button>
+                </div>
+            </div>
+
+            <!-------This row contains the last two answer options -------->
+
+            <div class="row">
+                <div class="col" id="question2">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question2">Freddy
+                        Krueger</button>
+                </div>
+
+                <div class="col" id="question2">
+                    <button id="wrongAnswer" type="button"
+                        class="btn btn-outline-dark btn-block question2">Leatherface</button>
+                </div>
+            </div>
+
+
+
+            <!----This row contains the third question------->
+            <div class="row">
+                <div class="col-12 questioncontentbox">
+
+                    <div class="questionbox">
+                        <p>Which actor played Pennywise in the 1990 miniseries?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-------This row contains the first two answer options ------->
+
+            <div class="row">
+                <div class="col" id="question3">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question3">Alice
+                        Cooper</button>
+                </div>
+
+                <div class="col" id="question3">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question3">Roddy
+                        McDowall</button>
+                </div>
+            </div>
+
+            <!-------This row contains the last two answer options -------->
+
+            <div class="row">
+                <div class="col" id="question3">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question3">Malcolm
+                        McDowell</button>
+
+                </div>
+
+                <div class="col" id="question3">
+                    <button id="rightAnswer" type="button" class="btn btn-outline-dark btn-block question3">Tim
+                        Curry</button>
+                </div>
+            </div>
+
+
+            <!----This row contains the fourth question------->
+
+            <div class="row">
+                <div class="col-12 questioncontentbox">
+                    <div class="questionbox">
+                        <p>Which horror movie was the first to be nominated for an oscar?</p>
+
+                    </div>
+
+                </div>
+            </div>
+           
+
+
+
+
+
+            <!-------This row contains the first two answer options ------->
+
+            <div class="row">
+                <div class="col" id="question4">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question4">The
+                        Omen</button>
+                </div>
+
+                <div class="col" id="question4">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question4">The
+                        Shining</button>
+                </div>
+            </div>
+
+            <!-------This row contains the last two answer options -------->
+
+            <div class="row">
+                <div class="col" id="question4">
+                    <button id="rightAnswer" type="button" class="btn btn-outline-dark btn-block question4">The
+                        Exorcist</button>
+                </div>
+
+                <div class="col" id="question4">
+                    <button id="wrongAnswer" type="button" class="btn btn-outline-dark btn-block question4">Texas
+                        Chain
+                        Saw Massacre</button>
+
+                </div>
+            </div>
+       
+
+
+
+
+
+
+
+</div>
+
+
+    </div>
+
+
+    <!-------This is the results page -->
+
+
+    <div id="results-page" style="display:none;">
+        
+            <div class="results-items">
+
+                <img src="/assets/images/jason.jpg" alt="Lil Jason" height="200px">
+                
+                <div class="results">
+                <p id="correct"> </p>
+                <p id="incorrect"> </p>
+                <p id="unanswered"> </p>
+                </div>
+
+            </div>
+            
+
+                
+
+
+            
+
         </div>
     </div>
+   
 
 
 
